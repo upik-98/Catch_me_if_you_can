@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch me if you can</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="section">
+        <h1 class="font-effect-shadow-multiple">Catch the insect</h1>
+        <button onclick="startGame()">Play Game</button>
+    </div>
+    <div class="section">
+        <h1>What is your "favorite" insect?</h1>
+        <ul>
+            <li>
+                <button onclick="insetGameStart('bee')">
+                    <p>Bee</p>
+                    <img src="img/bee.png" alt="Bee">
+                </button>
+            </li>
+            <li>
+                <button onclick="insetGameStart('mosquito')">
+                    <p>Mosquito</p>
+                    <img src="img/mosquito.png" alt="mosquito">
+
+                </button>
+            </li>
+            <li>
+                <button onclick="insetGameStart('bettle')">
+                    <p>Bettle</p>
+                    <img src="img/bettle.png" alt="bettle">
+                </button>
+            </li>
+
+        </ul>
+    </div>
+    <div class="section game_board">
+        <h3 id="timer" style="left:20px;">Time : 00:00</h3>
+        <h3 id="score" style="right:20px;">Score : 0</h3>
+        <h3 style="width:600px">The game is to annoy you with your favorite insects. Keep Playing.</h3>
+    </div>
+</body>
+
+</html>

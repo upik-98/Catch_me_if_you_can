@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&effect=shadow-multiple');
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 10px;
+}
+
+body {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgb(130, 193, 130);
+    color: white;
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: margin linear 1000ms;
+    height: 100vh;
+    width: 98vw;
+    min-width: 80vw;
+    min-height: 50vh;
+}
+
+.up {
+    margin-top: -100vh;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+}
+
+.section button {
+    color: rgb(130, 193, 130);
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.section button:hover {
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+li {
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto';
+    font-size: 2em;
+    text-align: center;
+    margin: 10px;
+}
+
+li button {
+    width: 185px;
+    height: 185px;
+}
+
+.game_board {
+    position: relative;
+}
+
+.insect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease-out;
+}
+
+.insect.catched {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+h3 {
+    position: absolute;
+    top: 0px;
+}
